@@ -88,7 +88,7 @@ _cleanup_test_img()
             ;;
 
         rbd)
-            rbd rm $TEST_DIR/t.$IMGFMT > /dev/null
+            rbd rm $TEST_DIR/t.$IMGFMT >/dev/null 2>/dev/null
             ;;
 
         sheepdog)
